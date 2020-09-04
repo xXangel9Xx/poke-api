@@ -1,5 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import Board from '../components/componentsIndex/board'
+import Nav from '../components/nav'
+import '../assets/pages/index.css'
 
 const Index = () =>{
     const [pokemons,setPokemons] = useState([])
@@ -15,15 +17,17 @@ const Index = () =>{
             array.push(dataResponse)
          }
          console.log(array)
-         setPokemons(array)
-         setWhenPokemons(start)
+         return setPokemons(array),setWhenPokemons(start)
      }
-     fetchPokemon()
+      //  if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight){
+            fetchPokemon()
+      //  }
     },[])
 
 
     return (
-        <div className="containerBoard">
+        <div className="container-page">
+            <Nav />
             <Board />
         </div>
     )

@@ -1,0 +1,30 @@
+@media screen and (min-width:1000px){
+    .container-Nav{
+        display: flex;
+        height: 100px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .container-logo{position: relative;
+        height: max-content;
+        top: 19px;
+        margin-left: 2%;
+    }    
+    .container-link{
+        position: relative;
+        top: 62px;
+        height: max-content;
+    }
+    .links{
+        margin-right: 5%;
+    }
+    #pokeBola{
+        position: relative;
+        background-image: url('../../images/Pokebola.png');
+        width: 100px;
+        height: 100px;
+        background-size: 100% 100%;
+    }
+
+
+}

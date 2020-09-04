@@ -4,7 +4,7 @@ import Cards from './cards'
 const Board = () =>{
 
     return(
-        <div className="containerCarts">
+        <div className="containerBoards">
             <Cards 
             
             />

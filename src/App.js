@@ -1,16 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Nav from './components/nav'
+//import Nav from './components/nav'
 import Index from './pages/index'
-
 import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Nav />
-        
         <Switch>
          <Route 
             exact

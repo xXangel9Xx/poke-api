@@ -1,0 +1,7 @@
+@media screen and (min-width:300px){
+    .container-page{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+}
