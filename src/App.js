@@ -1,16 +1,33 @@
 import React from 'react';
-//import logo from './logo.svg';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Nav from './components/nav'
+import Index from './pages/index'
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+      <div className="App">
+        <Nav />
+        
+        <Switch>
+         <Route 
+            exact
+            path="/"
+            component={Index}/>
+        </Switch>
+        
+      </div>  
+    </BrowserRouter>
 
-    </div>
   );
 }
 
 export default App;
+
+
+//import logo from './logo.svg';
 /*     <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
