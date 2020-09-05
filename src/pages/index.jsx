@@ -9,14 +9,13 @@ const Index = () =>{
 
     useEffect(()=>{
     async function fetchPokemon(){
-        let start = whenPokemons + 10
+        let start = whenPokemons + 1
         let array = []
          for(let i = whenPokemons; i < start ; i+=1){
             let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`);
             let dataResponse = await response.json()
             array.push(dataResponse)
          }
-         //console.log(array)
          return setPokemons(array),setWhenPokemons(start)
      }
       //  if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight){

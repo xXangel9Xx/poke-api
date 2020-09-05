@@ -1,0 +1,26 @@
+@media screen and (min-width:300px){
+    .steel{background: #9FACA9;}
+    .water{background: #84C2FF;}
+    .bug{background: #CCD77B;}
+    .dragon{background: #C882F3;}
+    .electric{background: #FFE55B;}
+    .ghost{background: #7465CF;}
+    .fire{background: #FF8F7B;}
+    .fairy{background: #EFAEFF;}
+    .ice{background: #AACEF1;}
+    .fight{background: #A99A89;}
+    .normal{background: #DAD7C9;}
+    .plant{background: #6BA497;}
+    .psychic{background: #F44987;}
+    .rock{background: #898F71;}
+    .sinister{background: #4F4A46;}
+    .earth{background: #C69C05;}
+    .poison{background: #7B30A9;}
+    .flying{background: #C2D9DE;}
+}
+@media screen and (min-width:1000px){
+    .letters{
+        width: 170px ;
+        height: 140px;
+    }
+}
