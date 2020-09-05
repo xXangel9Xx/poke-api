@@ -4,7 +4,6 @@ const Cards = (props) =>{
 
 useEffect(()=>{
     console.log(props.types)
-
 },[props.pokemons])
 
     return(
