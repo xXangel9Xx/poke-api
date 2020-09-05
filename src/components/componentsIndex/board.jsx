@@ -1,13 +1,20 @@
 import React, {useState,useEffect} from 'react';
 import Cards from './cards'
 
-const Board = () =>{
+const Board = (props) =>{
+
+    useEffect(()=>{
+        console.log(props.pokemons)
+    },[props.pokemons])
 
     return(
         <div className="containerBoards">
-            <Cards 
-            
-            />
+            {props.pokemons.map((pokemons,i)=>
+                    <Cards 
+                        key={i}
+                    />
+                )
+            }
         </div>
     )
 

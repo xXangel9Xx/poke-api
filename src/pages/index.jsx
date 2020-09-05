@@ -16,7 +16,7 @@ const Index = () =>{
             let dataResponse = await response.json()
             array.push(dataResponse)
          }
-         console.log(array)
+         //console.log(array)
          return setPokemons(array),setWhenPokemons(start)
      }
       //  if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight){
@@ -24,11 +24,15 @@ const Index = () =>{
       //  }
     },[])
 
+   // useEffect(()=>{
+   // },[pokemons])
 
     return (
         <div className="container-page">
             <Nav />
-            <Board />
+            <Board 
+            pokemons={pokemons}
+            />
         </div>
     )
 }
