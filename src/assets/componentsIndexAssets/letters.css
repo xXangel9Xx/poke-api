@@ -17,10 +17,55 @@
     .earth{background: #C69C05;}
     .poison{background: #7B30A9;}
     .flying{background: #C2D9DE;}
+    .grass{background: #6BA497;}
+    .container-informatio{
+        width: max-content;
+        margin-left: 10px;
+        margin-top: 28px;
+    }
+    .background{
+        background: rgba(254, 254, 254, 0.2);
+        border-radius: 25px;
+        width: 96px;}
+    .texts{
+        text-align: center;
+        color: white;
+        width: 96px;}
+    .container-id-pokemon{
+        display: flex;
+    }
+    .id-pokemon{
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+    }
+    .images-pokemons{
+        width: 68px;
+        margin-left: 12px;
+        margin-top: 13px;
+    }
+    .letters{
+        display: flex;
+        justify-content: space-around;
+        margin: 13px;
+    }
+    .container-images{
+        margin-left: 6px;
+        width: 100px;
+        height: 100px;
+        margin-top: 23px;
+        background-image: url('../../images/PokebolaLetters.png');
+        background-size: 100px 100px;
+        
+    }
 }
 @media screen and (min-width:1000px){
     .letters{
-        width: 170px ;
+        width: 210px ;
         height: 140px;
+            display: flex;
+    justify-content: space-around;
     }
 }

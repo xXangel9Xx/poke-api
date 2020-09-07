@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react';
-import Cards from './letters'
+import Letters from './letters'
 import '../../assets/componentsIndexAssets/board.css'
 const Board = (props) =>{
     useEffect(()=>{
@@ -9,12 +9,12 @@ const Board = (props) =>{
     return(
         <div className="container-boards">
             {props.pokemons.map((pokemons,i)=>
-                    <Cards 
+                    <Letters 
                         key={i}
                         name={pokemons.name}
                         classNameType={pokemons.types[0].type.name}
                         type={pokemons.types}
-                        id={i}
+                        id={pokemons.id}
                     />
              )
             }

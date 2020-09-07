@@ -9,7 +9,7 @@ const Index = () =>{
 
     useEffect(()=>{
     async function fetchPokemon(){
-        let start = whenPokemons + 1
+        let start = whenPokemons + 12
         let array = []
          for(let i = whenPokemons; i < start ; i+=1){
             let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`);
@@ -22,10 +22,6 @@ const Index = () =>{
             fetchPokemon()
       //  }
     },[])
-
-   // useEffect(()=>{
-   // },[pokemons])
-
     return (
         <div className="container-page">
             <Nav />
