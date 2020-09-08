@@ -3,7 +3,6 @@ import '../../assets/componentsIndexAssets/letters.css'
 const Cards = (props) =>{
     
 useEffect(()=>{
-    console.log(props.id)
 },[props.types])
 
     return(

@@ -1,3 +1,8 @@
+@media screen and (min-width:300px){
+    .link-show{
+        text-decoration: none;
+    }
+}
 @media screen and (min-width:1000px){
     .container-boards{
         width: 90%;

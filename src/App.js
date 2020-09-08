@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 //import Nav from './components/nav'
 import Index from './pages/index'
+import Show from './pages/show'
 import './App.css';
 
 function App() {
@@ -13,6 +14,11 @@ function App() {
             exact
             path="/"
             component={Index}/>
+         <Route 
+            exact
+            path="/pokemons/:id"
+            component={Show}/>
+
         </Switch>
         
       </div>  
