@@ -4,7 +4,6 @@ import '../../assets/componentsIndexAssets/board.css'
 import { Link } from 'react-router-dom';
 const Board = (props) =>{
     useEffect(()=>{
-        console.log(props.pokemons)
     },[props.pokemons])
     
     return(
