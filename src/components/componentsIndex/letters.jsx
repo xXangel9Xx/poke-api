@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import '../../assets/componentsIndexAssets/letters.css'
-const Cards = (props) =>{
+const Letters = (props) =>{
     
 useEffect(()=>{
 },[props.types])
@@ -35,4 +35,4 @@ useEffect(()=>{
         </div>
     )
 }
-export default Cards
+export default Letters

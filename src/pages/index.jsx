@@ -2,12 +2,12 @@ import React, {useState,useEffect} from 'react';
 import Board from '../components/componentsIndex/board'
 import Nav from '../components/nav'
 import '../assets/pages/index.css'
+//import { cleanup } from '@testing-library/react';
 
 const Index = () =>{
     const [pokemons,setPokemons] = useState([])
     const [whenPokemons,setWhenPokemons] = useState(1)
 
-    useEffect(()=>{
     async function fetchPokemon(){
         let start = whenPokemons + 12
         let array = []
@@ -16,8 +16,11 @@ const Index = () =>{
             let dataResponse = await response.json()
             array.push(dataResponse)
          }
-         return setPokemons(array),setWhenPokemons(start)
+         setWhenPokemons(start)
+         setPokemons(array)
      }
+
+    useEffect(()=>{
       //  if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight){
             fetchPokemon()
       //  }
@@ -31,7 +34,5 @@ const Index = () =>{
         </div>
     )
 }
-//https://pokeapi.co/api/v2/pokemon/{id or name}/
-//fetch()
 
 export default Index

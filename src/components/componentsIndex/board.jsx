@@ -9,7 +9,7 @@ const Board = (props) =>{
     return(
         <div className="container-boards">
             {props.pokemons.map((pokemons,i)=>
-                <Link to={`/pokemons/${pokemons.id}`}  className="link-show" >
+                <Link to={`/pokemons/${pokemons.id}`} key={pokemons.id} className="link-show" >
                     <Letters 
                         key={pokemons.id}
                         name={pokemons.name}
