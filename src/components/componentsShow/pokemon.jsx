@@ -1,38 +1,61 @@
 import React, {useState,useEffect} from 'react';
+import '../../assets/componentsShowAssets/pokemon.css';
+import '../../assets/colorTypePokemon/colorTypePokemon.css'
+import back from '../../images/Back.png'
+//import fullPokebola from '../../images/fullPokebola.png'
+import favorite from '../../images/favorite.png'
+
 const Pokemon = (props) =>{
     const [type1, setType1] = useState()
     const [type2, setType2] = useState()
     useEffect(()=>{
         try {
-            setType1(props.pokemonTypes[0])
+         setType1(props.pokemonTypes[0])
             if (props.pokemonTypes[1]) {
                 setType2(props.pokemonTypes[1])    
             }
         } catch (error) {
-            
-        }
-    },[props.pokemonTypes])
-
+        };
+    },[props.pokemonTypes]);
     useEffect(()=>{
-    },[type1])
-
+    },[type1]);
 
     return(
-        <div className="container-pokemon">
-            <div className="date-pokemon">
+        <>
+        {type1 &&
+        <div className={"container-pokemon "+ props.pokemonTypes[0].type.name}>
+            <div className={"date-pokemon "  }>
                     <p>{props.pokemonName}</p>
                 <div className="container-information-basic">
                     {type1 &&
-                    <p>{props.pokemonTypes[0].type.name}</p>                    
+                    <p className="background">{props.pokemonTypes[0].type.name}</p>                    
                     }
                     {type2 && 
-                     <p>{props.pokemonTypes[1].type.name}</p>                    
+                    <p className="background">{props.pokemonTypes[1].type.name}</p>                    
                     }
                 </div>
             </div>
 
+            <div className="container-image-pokemon-show">
+                <img src={"https://pokeres.bastionbot.org/images/pokemon/"+props.pokemonId+".png"} alt="" className="pokemon-image-show"/>
+            </div>
 
+            <div className="container-favorites">
+                <img src={favorite} alt="" className="favorite"/>
+                {props.pokemonId < 10 &&
+                <p>#00{props.pokemonId}</p>
+                }
+                {props.pokemonId >= 10 && props.pokemonId < 100 &&
+                <p>#0{props.pokemonId}</p>                
+                }
+                {props.pokemonId >= 10 && props.pokemonId >= 100 && props.pokemonId <= 999&&
+                <p>#{props.pokemonId}</p>                
+                }
+            </div>
         </div>
-    )
-}
-export default Pokemon
+        }
+
+        </>
+    );
+};
+export default Pokemon;

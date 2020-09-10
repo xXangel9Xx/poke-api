@@ -1,0 +1,44 @@
+@media screen and (min-width:300px){
+    
+    .container-pokemon{
+        display: flex;
+        justify-content: space-between;
+        height: 300px;
+        color: white;
+    }
+    .date-pokemon{
+        width: 150px;
+        padding-left: 15px;
+        padding-top: 52px;
+    }
+    .container-information-basic{
+        text-align: center;
+    }
+    .container-image-pokemon-show{
+        background-image: url('../../images//FullPokebola.png');
+        background-size: 150px;
+        height: 150px;
+        width: 150px;
+        margin-top: 120px;
+
+    }
+    .pokemon-image-show{
+        margin-top: 40px;
+        width: 120px;
+    }
+    .container-favorites{
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 15px;
+    }
+    .favorite{
+        width: 30px;
+        height: 30px;
+    }
+    .background{
+        background: rgba(254, 254, 254, 0.2);
+        border-radius: 25px;
+        width: 96px;
+    }
+}

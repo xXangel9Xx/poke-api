@@ -14,7 +14,7 @@ const Show = (props) =>{
         getPokemon()
     },[])
     return (
-        <div>
+        <div className="container-board-show">
             <Board 
                 pokemon={pokemon}
             />

@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import '../../assets/componentsIndexAssets/letters.css'
+import '../../assets/colorTypePokemon/colorTypePokemon.css'
 const Letters = (props) =>{
     
 useEffect(()=>{
@@ -20,7 +21,7 @@ useEffect(()=>{
                     {props.id < 10 &&
                         <p className="id-pokemon">#00{props.id}</p>    
                     }
-                    {props.id <= 100 && props.id >= 10 && 
+                    {props.id < 100 && props.id >= 10 && 
                     <p className="id-pokemon">#0{props.id}</p>    
                     }
                     {props.id >= 10 && props.id >= 100 && props.id <= 999  &&
