@@ -1,0 +1,13 @@
+@media screen and (min-width:300px){
+    .container-detail-pokemon{
+        background: #FEFEFE;
+        border-radius: 50px;
+        margin-top: -2%;
+        padding-top: 50px;
+    }
+    .detail-pokemon{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

@@ -52,7 +52,8 @@ const Pokemon = (props) =>{
                 <p>#{props.pokemonId}</p>                
                 }
             </div>
-        </div>
+        </div>            
+
         }
 
         </>

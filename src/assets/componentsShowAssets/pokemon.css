@@ -1,5 +1,4 @@
 @media screen and (min-width:300px){
-    
     .container-pokemon{
         display: flex;
         justify-content: space-between;
@@ -29,6 +28,7 @@
     .container-favorites{
         width: 150px;
         display: flex;
+        align-items: flex-end;
         flex-direction: column;
         padding-right: 15px;
     }
