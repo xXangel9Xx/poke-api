@@ -6,7 +6,9 @@ import BaseState from './baseStates'
 import Moves from './moves'
 const Board = (props) => {
     const [moves,setMoves] = useState()
-    const [show, setShow] = useState(false)
+    const [showAbout,setShowAbout] = useState(true)
+    const [showBaseState, setShowBaseState] = useState(false)
+    const [showMove, setShowMove] = useState(false)
 
     useEffect(()=>{
         try {
@@ -18,25 +20,17 @@ const Board = (props) => {
 
     useEffect(()=>{
     },[moves])
+    function showAboutEvent(){
+        return setShowAbout(true), setShowBaseState(false),setShowMove(false)
+    }
 
+    function showBaseStateEvent(){
+        return setShowBaseState(true), setShowAbout(false), setShowMove(false)
+    }
+    function showMoveEvent(){
+        return setShowMove(true), setShowAbout(false), setShowBaseState(false)
+    }
 
-    /*
-                 <About 
-                    pokemonHeight={props.pokemon.height}
-                    pokemonWeight={props.pokemon.weight}
-                    pokemonAbilities={props.pokemon.abilities}
-                />
-                
-            <BaseState 
-                    stats={props.pokemon.stats}
-            />
-                
-                */
-
-
-/*
-show == true &&
-*/
     return(
         <div className="board-show-pokemon">
             <Pokemon 
@@ -46,13 +40,24 @@ show == true &&
             />
             <div className="container-detail-pokemon">            
             <div className="detail-pokemon">
-                <div className="details"><p>About</p></div>
-                <div className="details states"><p>Base states</p></div>
-                <div className="details details-moves"><p>moves</p></div>
+                <div className="details" onClick={showAboutEvent}><p>About</p></div>
+                <div className="details states" onClick={showBaseStateEvent}><p>Base states</p></div>
+                <div className="details details-moves" onClick={showMoveEvent}><p>moves</p></div>
             </div>
-
+            { showAbout == true &&
+                 <About 
+                    pokemonHeight={props.pokemon.height}
+                    pokemonWeight={props.pokemon.weight}
+                    pokemonAbilities={props.pokemon.abilities}
+                />
+            }
+            {showBaseState == true &&
+                <BaseState 
+                    stats={props.pokemon.stats}
+                />
+            }
             <div className="container-moves">
-            {moves &&   moves.map((pokemon,i)=>
+            {showMove == true && moves &&   moves.map((pokemon,i)=>
                     <Moves 
                         key={i}
                         name={pokemon.move.name}
