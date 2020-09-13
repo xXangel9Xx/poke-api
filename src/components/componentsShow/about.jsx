@@ -28,12 +28,6 @@ useEffect(()=>{
             { abilities1 && abilities2 &&
                 <p>Abilities: {abilities1}, {abilities2}</p> 
             }
-
-
-  
-      
-
-
         </div>
     )
 }

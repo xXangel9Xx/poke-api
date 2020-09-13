@@ -7,7 +7,6 @@ const BaseState = (props) =>{
     },[props.stats])
 
     useEffect(()=>{
-        console.log(state)
     },[state])
     return (
         <div className="container-base-state">

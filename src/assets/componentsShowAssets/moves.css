@@ -1,0 +1,24 @@
+@media screen and (min-width:300px){
+    .move-name{color: #231F20;}
+    .level-learned-at{color: #636262;}
+}
+@media screen and (min-width:600px){
+    .container-moves{
+        width: 70%;
+        padding-left: 69px;
+    }
+}
+@media screen and (min-width:700px){.container-moves{padding-left:87px;}}
+@media screen and (min-width:800px){.container-moves{padding-left: 102px;}}
+@media screen and (min-width:900px){.container-moves{padding-left: 119px;}}
+@media screen and (min-width:1000px){.container-moves{padding-left: 136px;};}
+@media screen and (min-width:1100px){.container-moves{padding-left: 150px;};}
+@media screen and (min-width:1200px){.container-moves{padding-left: 170px;};}
+@media screen and (min-width:1300px){.container-moves{padding-left: 184px;};}
+@media screen and (min-width:1400px){.container-moves{padding-left: 201px;};}
+@media screen and (min-width:1500px){.container-moves{padding-left: 217px;};}
+@media screen and (min-width:1600px){.container-moves{padding-left: 231px;};}
+@media screen and (min-width:1700px){.container-moves{padding-left: 252px;};}
+@media screen and (min-width:1800px){.container-moves{padding-left: 269px;};}
+@media screen and (min-width:1900px){.container-moves{padding-left: 283px;};}
+@media screen and (min-width:2000px){.container-moves{padding-left: 297px;}}
