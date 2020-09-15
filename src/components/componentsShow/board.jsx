@@ -1,5 +1,6 @@
-import React, {useState,useEffect} from 'react'
-import '../../assets/componentsShowAssets/board.css'
+import React, {useState,useEffect} from 'react';
+import '../../assets/componentsShowAssets/board.css';
+import { Link } from 'react-router-dom';
 import Pokemon from './pokemon'
 import About from './about'
 import BaseState from './baseStates'
@@ -17,7 +18,7 @@ const Board = (props) => {
             
         }
     },[props.pokemon])
-
+//#415BA6;
     useEffect(()=>{
     },[moves])
     function showAboutEvent(){
@@ -38,7 +39,13 @@ const Board = (props) => {
                 pokemonId={props.pokemon.id}
                 pokemonTypes={props.pokemon.types}
             />
-            <div className="container-detail-pokemon">            
+
+            <div className="container-detail-pokemon">  
+                            <Link to={`/pokemons/${props.pokemon.id}/battle`} >
+                    <div className="battle-show">
+                        <p className="battle-text">Batalla</p>
+                    </div>
+                </Link>
             <div className="detail-pokemon">
                 <div className="details" onClick={showAboutEvent}><p>About</p></div>
                 <div className="details states" onClick={showBaseStateEvent}><p>Base states</p></div>

@@ -6,6 +6,23 @@
         display: flex;
         justify-content: space-around;
     }
+    .details:hover{
+        border-bottom: solid #415BA6;;
+    }
+    .battle-show{
+        padding-top: 8px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        margin: auto;
+        background-color: #415BA6;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px
+    }
+    .battle-text{
+        margin: 0px;
+    }
 
 }
 @media screen and (min-width:600px){

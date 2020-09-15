@@ -18,7 +18,10 @@ function App() {
             exact
             path="/pokemons/:id"
             component={Show}/>
-
+          <Route 
+            exact 
+            path="/pokemons/:id/battle"
+          />
         </Switch>
         
       </div>  
