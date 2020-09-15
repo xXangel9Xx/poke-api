@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 //import Nav from './components/nav'
 import Index from './pages/index'
 import Show from './pages/show'
+import Battle from './pages/battle'
 import './App.css';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Route 
             exact 
             path="/pokemons/:id/battle"
-          />
+            component={Battle}/>
         </Switch>
         
       </div>  

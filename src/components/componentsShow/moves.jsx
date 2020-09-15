@@ -5,7 +5,7 @@ const Moves = (props) =>{
         <div className="container-datos-of-moves">
                 <div className="container-date-move" >
                     <p className="name-move">{props.name}</p>
-                    <p className="level-learned-at">{props.level}</p>  
+                    <p className="level-learned-at">Level: {props.level}</p>  
                     <hr/>           
                 </div>
         </div>

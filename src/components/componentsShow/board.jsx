@@ -41,7 +41,7 @@ const Board = (props) => {
             />
 
             <div className="container-detail-pokemon">  
-                            <Link to={`/pokemons/${props.pokemon.id}/battle`} >
+                <Link to={`/pokemons/${props.pokemon.id}/battle`}  className="link-battle">
                     <div className="battle-show">
                         <p className="battle-text">Batalla</p>
                     </div>
