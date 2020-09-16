@@ -1,10 +1,17 @@
-import React, {useState,UseEffect} from 'react';
-const Movements = () =>{
+import React, {useState,useEffect} from 'react';
+const Movements = (props) =>{
+    useEffect(()=>{
+        console.log(props.movements)
+    },[props.movements])
 
     return (
-        <div className="container-movements">
-
-        </div>
+        <>
+        { props.movements &&
+            <div className="container-movements">
+                
+            </div>
+        }
+        </>
     )
 }
 export default Movements

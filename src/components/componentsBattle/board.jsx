@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react';
 import '../../assets/componentsBattleAssets/board.css'
 import NamePokemons from './namePokemons'
 import CountrySideBattle from './countrysideBattle'
+import Movements from './movements'
 const Board = (props) =>{
     useEffect(()=>{},[props.pokemonPlayer])
     useEffect(()=>{},[props.pokemonMachine])
@@ -27,7 +28,9 @@ const Board = (props) =>{
                 classPokemonPlayer={"pokemon-player"}
                 classPokemonMachine={"pokemon-machine"}
             /> 
-   
+            <Movements 
+                movements={props.pokemonPlayer.stats}
+            />
         </div>
     )
 
