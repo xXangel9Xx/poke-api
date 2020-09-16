@@ -1,9 +1,10 @@
 import React, {useState,useEffect} from 'react';
-const NamePokemons = () =>{
-
+import '../../assets/componentsBattleAssets/namePokemons.css'
+const NamePokemons = (props) =>{
+    useEffect(()=>{},[props.namePokemon])
     return(
-        <div className="container-name-pokemons">
-
+        <div className="container-name">
+            <p>{props.namePokemon}</p>
         </div>
     )
 }

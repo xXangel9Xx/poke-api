@@ -1,9 +1,33 @@
 import React, {useState,useEffect} from 'react';
-const Board = () =>{
-    
+import '../../assets/componentsBattleAssets/board.css'
+import NamePokemons from './namePokemons'
+import CountrySideBattle from './countrysideBattle'
+const Board = (props) =>{
+    useEffect(()=>{},[props.pokemonPlayer])
+    useEffect(()=>{},[props.pokemonMachine])
+       /*    */     
+        
     return (
         <div className="board-battle">
-
+            <p className="battle-letters">Batalla</p>
+            <div className="container-name-pokemons letters">
+                <NamePokemons 
+                    namePokemon={props.pokemonPlayer.name}
+                    
+                />
+                <p>Vs</p>
+                <NamePokemons 
+                    namePokemon={props.pokemonMachine.name}
+                    
+                />
+            </div>
+            <CountrySideBattle 
+                idPokemonPlayer={props.pokemonPlayer.id}
+                idPokemonMachine={props.pokemonMachine.id}
+                classPokemonPlayer={"pokemon-player"}
+                classPokemonMachine={"pokemon-machine"}
+            /> 
+   
         </div>
     )
 

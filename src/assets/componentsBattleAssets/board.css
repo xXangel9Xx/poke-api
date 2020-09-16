@@ -1,0 +1,20 @@
+@media screen and (min-width:300px){
+    .board-battle{width: 100%;
+        height: 100%;
+        background-color:#415BA6;
+    }
+    .battle-letters{
+        color: white;
+        margin: 0%;
+        width: max-content;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    .container-name-pokemons{
+        margin: 0%;
+        display: flex;
+        justify-content: space-around;
+        width: 250px;
+    }
+    .letters{color: white;}
+}
