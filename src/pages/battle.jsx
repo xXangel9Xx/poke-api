@@ -5,17 +5,12 @@ const Battle = (props) =>{
     const [pokemonMachine, setPokemonMachine] = useState( Math.floor(Math.random()*999)+1 )
     useEffect(()=>{
          getPokemon(pokemonPlayer).then(val => setPokemonPlayer(val) )
-        //
+      
     },[])
     useEffect(()=>{
-       console.log(pokemonPlayer)
-    },[pokemonPlayer])
-/*
-    useEffect(()=>{
-        let dataResponse = getPokemon(pokemonMachine)
-        setPokemonMachine(dataResponse)
+        getPokemon(pokemonMachine).then(val => setPokemonMachine(val) )  
     },[])
-*/
+
     return (
         <div className="container-battle">
 
