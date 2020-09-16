@@ -4,7 +4,6 @@ const About = (props) =>{
     const [abilities1,setAbilities1] = useState([])
     const [abilities2,setAbilities2] = useState([])
 useEffect(()=>{
-    console.log(props.pokemonAbilities)
   try {
         setAbilities1(props.pokemonAbilities[0].ability.name)
         if (props.pokemonAbilities[1]) {

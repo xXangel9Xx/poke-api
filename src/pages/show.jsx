@@ -1,17 +1,11 @@
 import React, {useState,useEffect} from 'react';
 import Board from '../components/componentsShow/board'
+import getPokemon from '../codeJavascript/getPokemon'
 const Show = (props) =>{
     const [location,setLocation] = useState(props.match.params.id)
     const [pokemon,setPokemon] = useState([])
-
-        async function getPokemon(){
-            let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${location}/`);
-            let dataResponse = await response.json()
-            return setPokemon(dataResponse)
-        }
-
     useEffect(()=>{        
-        getPokemon()
+        getPokemon(location).then( val => setPokemon(val) )
     },[])
     return (
         <div className="container-board-show">
