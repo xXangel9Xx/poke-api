@@ -4,7 +4,7 @@ import NamePokemons from './namePokemons'
 import CountrySideBattle from './countrysideBattle'
 import Movements from './movements'
 const Board = (props) =>{
-    useEffect(()=>{},[props.pokemonPlayer])
+    useEffect(()=>{console.log(props.pokemonPlayer)},[props.pokemonPlayer])
     useEffect(()=>{},[props.pokemonMachine])
        /*    */     
         

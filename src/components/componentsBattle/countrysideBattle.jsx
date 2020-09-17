@@ -8,7 +8,7 @@ const CountrySideBattle = (props) =>{
         <div className="container-country-side-battle">
             
                 <div className={"container-image-pokemon-batte width-heigh-image-and-container " + props.classPokemonPlayer}>
-                    <img src={"https://pokeres.bastionbot.org/images/pokemon/"+props.idPokemonPlayer+".png"} alt="" className="width-heigh-image-and-container"/>
+                    <img src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/"+props.idPokemonPlayer+".png"} alt="" className="width-heigh-image-and-container"/>
                     <img src={Terreno} alt="" className="terreno"/>
                 </div>
 
@@ -21,4 +21,4 @@ const CountrySideBattle = (props) =>{
     )
 }
 export default CountrySideBattle
-              /* */
+             
