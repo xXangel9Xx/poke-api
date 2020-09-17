@@ -8,8 +8,12 @@ const Nav = () =>{
         <div className="container-Nav">
             <div className="container-logo"><img src={logo} alt=""/></div>
             <div className="container-link">
-                <a href="" className="links"><strong>Listado</strong></a>
+                <Link to="/" className="links">
+                    <strong>Listado</strong>
+                </Link>
+                
                 <a href="" className="links"><strong>Favoritos</strong></a>
+                
                 <Link to="/battle" className="links">
                     <strong>Batalla</strong>
                 </Link>
