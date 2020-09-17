@@ -27,3 +27,16 @@
     }
 
 }
+@media screen and (min-width:800px){.container-movements{padding-top:132px;}}
+@media screen and (min-width:900px){.container-movements{padding-top:165px;}}
+@media screen and (min-width:1000px){.container-movements{padding-top:198px;}}
+@media screen and (min-width:1100px){.container-movements{padding-top:223px;}}
+@media screen and (min-width:1200px){.container-movements{padding-top:263px;}}
+@media screen and (min-width:1300px){.container-movements{padding-top:293px;}}
+@media screen and (min-width:1400px){.container-movements{padding-top:332px;}}
+@media screen and (min-width:1500px){.container-movements{padding-top:357px;}}
+@media screen and (min-width:1600px){.container-movements{padding-top:390px;}}
+@media screen and (min-width:1700px){.container-movements{padding-top:432px;}}
+@media screen and (min-width:1800px){.container-movements{padding-top:456px;}}
+@media screen and (min-width:1900px){.container-movements{padding-top:493px;}}
+@media screen and (min-width:2000px){.container-movements{padding-top:520px;}}

@@ -12,7 +12,7 @@ const CountrySideBattle = (props) =>{
                     <img src={Terreno} alt="" className="terreno"/>
                 </div>
 
-                <div className="container-image-pokemon-batte width-heigh-image-and-container">
+                <div className="container-image-pokemon-batte width-heigh-image-and-container margin-pokemon-machine">
                     <img src={"https://pokeres.bastionbot.org/images/pokemon/"+props.idPokemonMachine+".png"} alt="" className="width-heigh-image-and-container"/>
                     <img src={Terreno} alt="" className="terreno"/>
                 </div>

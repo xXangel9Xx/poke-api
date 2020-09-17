@@ -1,7 +1,4 @@
 @media screen and (min-width:300px){
-   /* .container-country-side-battle{
-        background-image: url("../../images/Group.png");
-    }*/
     .container-country-side-battle{
         display: flex;
         justify-content: space-around;
@@ -22,5 +19,45 @@
         position: absolute;
         height: 37%;
         background-image: url('../../images/Group.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
+}
+@media screen and (min-width:700px){.container-country-side-battle{height: 39%;}}
+@media screen and (min-width:800px){
+    .container-country-side-battle{height: 45%;}
+    .margin-pokemon-machine{margin-top: 13px;}
+}
+@media screen and (min-width:900px){.container-country-side-battle{height: 50%;}
+    .margin-pokemon-machine{margin-top: 25px;}
+    .pokemon-player{margin-top: 110px;}
+}
+@media screen and (min-width:1000px){
+    .container-country-side-battle{height: 55%;}
+    .margin-pokemon-machine{margin-top: 36px;}
+    .pokemon-player{margin-top: 140px;}
+}
+@media screen and (min-width:1100px){
+    .container-country-side-battle{height: 60%;}
+    .margin-pokemon-machine{margin-top: 48px;}
+    .pokemon-player{margin-top: 162px;}
+}
+@media screen and (min-width:1200px){.container-country-side-battle{height: 70%;}}
+@media screen and (min-width:1300px){
+    .margin-pokemon-machine{margin-top: 74px;}
+    .pokemon-player{margin-top: 209px;}
+}
+@media screen and (min-width:1500px){
+    .width-heigh-image-and-container{
+        height: 150px;
+        width: 150px;
+    }
+    .terreno{width: 150px;}
+}
+@media screen and (min-width:1900px){
+    .width-heigh-image-and-container{
+        height: 200px;
+        width: 200px;
+    }
+    .terreno{width: 200px;}
 }

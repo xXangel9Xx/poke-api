@@ -18,3 +18,5 @@
     }
     .letters{color: white;}
 }
+
+@media screen and (min-width:1000px){.container-name-pokemons{height: 58px;}}
