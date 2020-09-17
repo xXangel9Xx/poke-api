@@ -23,6 +23,11 @@ function App() {
             exact 
             path="/pokemons/:id/battle"
             component={Battle}/>
+          <Route
+            exact
+            path="/battle"
+            component={Battle}
+          />
         </Switch>
         
       </div>  

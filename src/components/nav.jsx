@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import '../assets/main/nav.css'
 import logo from '../images/Logo.png'
-
+import { Link } from 'react-router-dom';
 const Nav = () =>{
 
     return (
@@ -10,7 +10,9 @@ const Nav = () =>{
             <div className="container-link">
                 <a href="" className="links"><strong>Listado</strong></a>
                 <a href="" className="links"><strong>Favoritos</strong></a>
-                <a href="" className="links"><strong>Batalla</strong></a>
+                <Link to="/battle" className="links">
+                    <strong>Batalla</strong>
+                </Link>
             </div>
             <div id="pokeBola"></div>
         </div>

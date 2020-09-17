@@ -4,33 +4,40 @@ import NamePokemons from './namePokemons'
 import CountrySideBattle from './countrysideBattle'
 import Movements from './movements'
 const Board = (props) =>{
-    useEffect(()=>{console.log(props.pokemonPlayer)},[props.pokemonPlayer])
+    useEffect(()=>{},[props.pokemonPlayer])
     useEffect(()=>{},[props.pokemonMachine])
-       /*    */     
         
     return (
         <div className="board-battle">
             <p className="battle-letters">Batalla</p>
             <div className="container-name-pokemons letters">
+                {props.pokemonPlayer &&
                 <NamePokemons 
                     namePokemon={props.pokemonPlayer.name}
-                    
                 />
+                }
                 <p>Vs</p>
+                { props.pokemonMachine &&
                 <NamePokemons 
                     namePokemon={props.pokemonMachine.name}
                     
-                />
+                />  
+                }
             </div>
-            <CountrySideBattle 
+            { props.pokemonPlayer && props.pokemonPlayer &&
+                <CountrySideBattle 
                 idPokemonPlayer={props.pokemonPlayer.id}
                 idPokemonMachine={props.pokemonMachine.id}
                 classPokemonPlayer={"pokemon-player"}
                 classPokemonMachine={"pokemon-machine"}
-            /> 
-            <Movements 
+                /> 
+            }
+            { props.pokemonPlayer &&
+                <Movements 
                 movements={props.pokemonPlayer.stats}
-            />
+                /> 
+            }
+            
         </div>
     )
 
