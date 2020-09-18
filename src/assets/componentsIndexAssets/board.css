@@ -1,4 +1,12 @@
 @media screen and (min-width:300px){
+    .container-boards{
+        width: 90%;
+        padding-left: 8%;
+        padding-right: 0%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     .link-show{
         text-decoration: none;
     }

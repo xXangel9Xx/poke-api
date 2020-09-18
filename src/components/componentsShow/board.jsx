@@ -10,7 +10,6 @@ const Board = (props) => {
     const [showAbout,setShowAbout] = useState(true)
     const [showBaseState, setShowBaseState] = useState(false)
     const [showMove, setShowMove] = useState(false)
-
     useEffect(()=>{
         try {
             setMoves(props.pokemon.moves)
@@ -20,17 +19,9 @@ const Board = (props) => {
     },[props.pokemon])
     useEffect(()=>{
     },[moves])
-    function showAboutEvent(){
-        return setShowAbout(true), setShowBaseState(false),setShowMove(false)
-    }
-
-    function showBaseStateEvent(){
-        return setShowBaseState(true), setShowAbout(false), setShowMove(false)
-    }
-    function showMoveEvent(){
-        return setShowMove(true), setShowAbout(false), setShowBaseState(false)
-    }
-
+    function showAboutEvent(){return setShowAbout(true), setShowBaseState(false),setShowMove(false)}
+    function showBaseStateEvent(){return setShowBaseState(true), setShowAbout(false), setShowMove(false)}
+    function showMoveEvent(){return setShowMove(true), setShowAbout(false), setShowBaseState(false)}
     return(
     <div className="board-show-pokemon">
             <Pokemon 

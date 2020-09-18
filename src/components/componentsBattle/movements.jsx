@@ -1,10 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import '../../assets/componentsBattleAssets/movements.css'
 const Movements = (props) =>{
-    useEffect(()=>{
-        console.log(props.movements)
-    },[props.movements])
-
+    useEffect(()=>{},[props.movements])
     return (
         <>
         { props.movements &&
