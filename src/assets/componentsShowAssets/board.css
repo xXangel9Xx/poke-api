@@ -1,7 +1,9 @@
 @media screen and (min-width:300px){
     .container-detail-pokemon{
-        display: none;
+        display: block;
     }
+    .states,.details-moves,.container-moves{display:none}
+
     .detail-pokemon{
         display: flex;
         justify-content: space-around;
@@ -29,6 +31,9 @@
 
 }
 @media screen and (min-width:600px){
+    .states,.details-moves{display: flex;}
+    .container-moves{display: block;}
+    
     .container-detail-pokemon{
         display: block;
         background: #FEFEFE;

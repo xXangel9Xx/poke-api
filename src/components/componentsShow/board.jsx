@@ -18,7 +18,6 @@ const Board = (props) => {
             
         }
     },[props.pokemon])
-//#415BA6;
     useEffect(()=>{
     },[moves])
     function showAboutEvent(){
@@ -33,24 +32,24 @@ const Board = (props) => {
     }
 
     return(
-        <div className="board-show-pokemon">
+    <div className="board-show-pokemon">
             <Pokemon 
                 pokemonName={props.pokemon.name}
                 pokemonId={props.pokemon.id}
                 pokemonTypes={props.pokemon.types}
             />
-
-            <div className="container-detail-pokemon">  
+        <div className="container-detail-pokemon">  
                 <Link to={`/pokemons/${props.pokemon.id}/battle`}  className="link-battle">
                     <div className="battle-show">
                         <p className="battle-text">Batalla</p>
                     </div>
                 </Link>
             <div className="detail-pokemon">
-                <div className="details" onClick={showAboutEvent}><p>About</p></div>
+                <div className="details about" onClick={showAboutEvent}><p>About</p></div>
                 <div className="details states" onClick={showBaseStateEvent}><p>Base states</p></div>
                 <div className="details details-moves" onClick={showMoveEvent}><p>moves</p></div>
             </div>
+
             { showAbout == true &&
                  <About 
                     pokemonHeight={props.pokemon.height}
@@ -58,6 +57,7 @@ const Board = (props) => {
                     pokemonAbilities={props.pokemon.abilities}
                 />
             }
+
             {showBaseState == true &&
                 <BaseState 
                     stats={props.pokemon.stats}
@@ -73,9 +73,8 @@ const Board = (props) => {
                 )            
             }
             </div>
-
-            </div>
         </div>
+    </div>
     )
 }
 export default Board
