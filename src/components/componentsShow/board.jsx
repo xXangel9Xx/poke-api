@@ -18,7 +18,22 @@ const Board = (props) => {
         }
     },[props.pokemon])
     useEffect(()=>{
-    },[moves])
+    },[moves])/*
+    function favorite(idPokemon,localStorage){
+        if ( localStorage.get('favorite') ) {
+            let favorite = localStorage.get('favorite')
+            localStorage.set('favorite',[...favorite,idPokemon])
+            console.log(localStorage.get('favorite'))
+        } else {
+            localStorage.set('favorite',[idPokemon])
+        }
+        console.log(localStorage.get('favorite'))
+    }*//*
+    function destroy(idPokemon,localStorage){
+        localStorage.get('favorite')
+        localStorage.remove('favorite')
+        console.log(localStorage.get('favorite')) favoriteFunction={favorite}
+    }*/
     function showAboutEvent(){return setShowAbout(true), setShowBaseState(false),setShowMove(false)}
     function showBaseStateEvent(){return setShowBaseState(true), setShowAbout(false), setShowMove(false)}
     function showMoveEvent(){return setShowMove(true), setShowAbout(false), setShowBaseState(false)}

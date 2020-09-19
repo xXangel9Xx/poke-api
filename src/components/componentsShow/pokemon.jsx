@@ -1,7 +1,9 @@
 import React, {useState,useEffect} from 'react';
+import localStorage from 'local-storage';
+import favoriteFunction from '../../codeJavascript/localStorage/favoriteFunction'
 import '../../assets/componentsShowAssets/pokemon.css';
-import '../../assets/colorTypePokemon/colorTypePokemon.css'
-import back from '../../images/Back.png'
+import '../../assets/colorTypePokemon/colorTypePokemon.css';
+import back from '../../images/Back.png';
 //import fullPokebola from '../../images/fullPokebola.png'
 import favorite from '../../images/favorite.png'
 
@@ -41,7 +43,7 @@ const Pokemon = (props) =>{
             </div>
 
             <div className="container-favorites">
-                <img src={favorite} alt="" className="favorite"/>
+                <img src={favorite} alt="" className="favorite" onClick={(e)=>favoriteFunction(props.pokemonId,localStorage)}/>
                 {props.pokemonId < 10 &&
                 <p>#00{props.pokemonId}</p>
                 }
