@@ -4,7 +4,6 @@ import favoriteFunction from '../../codeJavascript/localStorage/favoriteFunction
 import '../../assets/componentsShowAssets/pokemon.css';
 import '../../assets/colorTypePokemon/colorTypePokemon.css';
 import back from '../../images/Back.png';
-//import fullPokebola from '../../images/fullPokebola.png'
 import favorite from '../../images/favorite.png'
 
 const Pokemon = (props) =>{
