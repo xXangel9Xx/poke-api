@@ -2,7 +2,6 @@ import React, {useState,useEffect} from 'react';
 import Board from '../components/componentsIndex/board'
 import Nav from '../components/nav'
 import '../assets/pages/index.css'
-//import { cleanup } from '@testing-library/react';
 
 const Index = () =>{
     const [pokemons,setPokemons] = useState([])

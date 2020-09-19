@@ -5,7 +5,6 @@ import Show from './pages/show'
 import Battle from './pages/battle'
 import Favorite from './pages/favorite'
 import './App.css';
-
 function App() {
   return (
     <BrowserRouter>
@@ -40,22 +39,4 @@ function App() {
 
   );
 }
-
 export default App;
-
-
-//import logo from './logo.svg';
-/*     <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>*/

@@ -1,0 +1,5 @@
+@media screen and (min-width:300px){
+    .container-text-favorite,.container-text{text-align: center;}
+    .container-text-favorite{font-size: xx-large;}
+    .container-text{color: #636262;}
+}

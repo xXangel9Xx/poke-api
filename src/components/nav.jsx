@@ -11,9 +11,9 @@ const Nav = () =>{
                 <Link to="/" className="links">
                     <strong>Listado</strong>
                 </Link>
-                
-                <a href="" className="links"><strong>Favoritos</strong></a>
-                
+                <Link to="/favorite" className="links">
+                    <strong>Favoritos</strong>
+                </Link>
                 <Link to="/battle" className="links">
                     <strong>Batalla</strong>
                 </Link>
