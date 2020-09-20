@@ -3,7 +3,6 @@ import '../../assets/componentsBattleAssets/board.css'
 import NamePokemons from './namePokemons'
 import CountrySideBattle from './countrysideBattle'
 import Movements from './movements'
-import gamePokemon from '../../codeJavascript/battle/gamePokemon';
 
 const Board = (props) =>{
     const [hpPlayer,setHpPlayer] = useState(100)

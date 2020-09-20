@@ -2,7 +2,6 @@ import React,{useState,useEffect} from 'react';
 import '../assets/componentsBattleAssets/battle.css'
 import getPokemon from '../codeJavascript/getPokemon'
 import Board from '../components/componentsBattle/board'
-import gamePokemon from '../codeJavascript/battle/gamePokemon'
 const Battle = (props) =>{
     const [pokemonPlayer, setPokemonPlayer] = useState(props.match.params.id)
     const [pokemonPlayerRandom,setPokemonPlayerRandom] = useState( Math.floor(Math.random()*900)+1 )
