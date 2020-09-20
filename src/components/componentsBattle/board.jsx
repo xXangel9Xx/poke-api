@@ -3,7 +3,12 @@ import '../../assets/componentsBattleAssets/board.css'
 import NamePokemons from './namePokemons'
 import CountrySideBattle from './countrysideBattle'
 import Movements from './movements'
+import gamePokemon from '../../codeJavascript/battle/gamePokemon';
+
 const Board = (props) =>{
+    const [hpPlayer,setHpPlayer] = useState(100)
+    const [hpMachine,setHpMachine] = useState(100)
+
     useEffect(()=>{},[props.pokemonPlayer])
     useEffect(()=>{},[props.pokemonMachine])
         
@@ -35,6 +40,10 @@ const Board = (props) =>{
             { props.pokemonPlayer &&
                 <Movements 
                 movements={props.pokemonPlayer.stats}
+                hpPlayer={hpPlayer}
+                setHpPlayer={setHpPlayer}
+                hpMachine={hpMachine}
+                setHpMachine={setHpMachine}
                 /> 
             }
             
