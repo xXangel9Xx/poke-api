@@ -4,8 +4,12 @@ import gamePokemon from '../../codeJavascript/battle/gamePokemon'
 
 const Movements = (props) =>{
     useEffect(()=>{},[props.movementsPlayer])
-    useEffect(()=>{},[props.hpPlayer])
-    useEffect(()=>{},[props.hpMachine])
+    useEffect(()=>{
+        console.log("se modifico hp player " + props.hpPlayer)
+    },[props.hpPlayer])
+    useEffect(()=>{
+        console.log("se modifico hp machine "+props.hpMachine)
+    },[props.hpMachine])
     useEffect(()=>{},[props.movementsMachine])
     return (
         <>
