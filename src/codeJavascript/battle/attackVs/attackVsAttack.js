@@ -1,3 +1,3 @@
-export default function playerAttackVsMachineAttack(hpPlayer,setHpPlayer,hpMachine,setHpMachine){
+export default function playerAttackVsMachineAttack(){
 
 }
