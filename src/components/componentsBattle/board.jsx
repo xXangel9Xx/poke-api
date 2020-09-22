@@ -36,9 +36,10 @@ const Board = (props) =>{
                 classPokemonMachine={"pokemon-machine"}
                 /> 
             }
-            { props.pokemonPlayer &&
+            { props.pokemonPlayer && props.pokemonMachine &&
                 <Movements 
-                movements={props.pokemonPlayer.stats}
+                movementsPlayer={props.pokemonPlayer.stats}
+                movementsMachine={props.pokemonMachine.stats}
                 hpPlayer={hpPlayer}
                 setHpPlayer={setHpPlayer}
                 hpMachine={hpMachine}
