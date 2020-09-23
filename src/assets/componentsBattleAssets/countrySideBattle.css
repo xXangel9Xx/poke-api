@@ -12,6 +12,17 @@
     .terreno{width: 100px;
         margin-top: -20px;}
     .pokemon-player{margin-top: auto;}
+    .hp{
+        width: 0px;
+        height: 3px;
+        background: linear-gradient(90deg, rgba(255,0,0,1) 5%, rgba(241,255,0,1) 40%, rgba(249,255,0,1) 68%, rgba(1,250,0,1) 100%);
+    }
+    .container-hp{display: flex;}
+    .hp-number{margin: 0px;}
+    #image-player, #image-machine{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
 }
 @media screen and (min-width:600px){
     .pokemon-player{margin-top: 90px;}

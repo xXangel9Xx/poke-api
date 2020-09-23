@@ -34,6 +34,8 @@ const Board = (props) =>{
                 idPokemonMachine={props.pokemonMachine.id}
                 classPokemonPlayer={"pokemon-player"}
                 classPokemonMachine={"pokemon-machine"}
+                hpPlayer={hpPlayer}
+                hpMachine={hpMachine}           
                 /> 
             }
             { props.pokemonPlayer && props.pokemonMachine &&
