@@ -6,19 +6,31 @@ const CountrySideBattle = (props) =>{
     useEffect(()=>{},[props.idPokemonMachine])
     function movementEffect(search){
         let image = document.getElementById(search)
-        for(let i = 0; i<= 50; i+=1){
+        let repy = 0
+        while (repy <= 100) {
+            for(let i = 0; i<= 50; i+=1){
             setTimeout(()=>{
                 image.style.marginRight = i+"px"
             },1000) 
+            }
+            repy++
         }
+
     }
     function movementEffectMachine(search){
         let image = document.getElementById(search)
-        for(let i = 0; i<= 50; i+=1){
+        console.log("estoy en machine")
+        let repy = 0
+        while (repy<=30) {
+            for(let i = 0; i<= 100; i+=1){
             setTimeout(()=>{
                 image.style.marginLeft = i+"px"
             },1000) 
+            }
+            repy++
         }
+
+
     }
     function hp(hpProperty,hp){
         for(let i = 0; i <= hp; i+=1){  
