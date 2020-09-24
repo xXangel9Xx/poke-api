@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import localStorage from 'local-storage';
+import { Link } from 'react-router-dom';
 import favoriteFunction from '../../codeJavascript/localStorage/favoriteFunction'
 import '../../assets/componentsShowAssets/pokemon.css';
 import '../../assets/colorTypePokemon/colorTypePokemon.css';
@@ -26,6 +27,12 @@ const Pokemon = (props) =>{
         {type1 &&
         <div className={"container-pokemon "+ props.pokemonTypes[0].type.name}>
             <div className={"date-pokemon "  }>
+                    <div className="container-back">
+                        <Link to="/">
+                        <img src={back} alt=""/>                        
+                        </Link>
+
+                    </div>
                     <p>{props.pokemonName}</p>
                 <div className="container-information-basic">
                     {type1 &&

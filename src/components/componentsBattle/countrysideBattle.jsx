@@ -4,6 +4,8 @@ import Terreno from '../../images/Terreno.png'
 const CountrySideBattle = (props) =>{
     useEffect(()=>{},[props.idPokemonPlayer])
     useEffect(()=>{},[props.idPokemonMachine])
+
+
     function movementEffect(search){
         let image = document.getElementById(search)
         let repy = 0
@@ -33,6 +35,8 @@ const CountrySideBattle = (props) =>{
             hpProperty.style.width = i+"px"
         }
     }
+
+
     useEffect(()=>{
         let hpPropertyWidth = document.getElementById("hp-player");
         hp(hpPropertyWidth,props.hpPlayer)
@@ -44,7 +48,9 @@ const CountrySideBattle = (props) =>{
         let hpPropertyWidth = document.getElementById("hp-machine")
         hp(hpPropertyWidth,props.hpMachine)
         movementEffectMachine("image-machine")
+
     },[props.hpMachine])
+
     return (
         <div className="container-country-side-battle">
                 <div className={"container-image-pokemon-batte width-heigh-image-and-container  " + props.classPokemonPlayer} id="image-player">
