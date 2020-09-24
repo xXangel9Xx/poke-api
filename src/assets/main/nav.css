@@ -26,7 +26,33 @@
         height: 100px;
         background-size: 100% 100%;
     }
+    #menu{display: flex;
+        height: 20px;
+        margin-left: 52px;
+        margin-top: 27px;}
+    #logo-movile{    
+        margin-left: 108px;
+        margin-top: 25px;}
+    #closer-nav-movile{
+        margin-left: 64px;
+        margin-bottom: 35px;
+    }
+    .container-nav-movile{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background: #FEFEFE;
+    }
+    .links-movile{text-decoration: none !important;}
+    .container-links-movile{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+
 }
 @media screen and (min-width:600px){
     .container-link{display: flex;}
 }
+@media screen and (min-width:1000px){#menu{display: none;}}
