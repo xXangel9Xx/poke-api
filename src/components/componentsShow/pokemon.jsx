@@ -5,7 +5,8 @@ import favoriteFunction from '../../codeJavascript/localStorage/favoriteFunction
 import '../../assets/componentsShowAssets/pokemon.css';
 import '../../assets/colorTypePokemon/colorTypePokemon.css';
 import back from '../../images/Back.png';
-import favorite from '../../images/favorite.png'
+import favorite from '../../images/favorite.png';
+import favoriteIco from '../../images/addPokemonGif.gif'
 
 const Pokemon = (props) =>{
     const [type1, setType1] = useState()
@@ -25,7 +26,11 @@ const Pokemon = (props) =>{
     return(
         <>
         {type1 &&
+        
         <div className={"container-pokemon "+ props.pokemonTypes[0].type.name}>
+            <img src={favoriteIco} alt="" id="favorite-ico"/>
+                
+  
             <div className={"date-pokemon "  }>
                     <div className="container-back">
                         <Link to="/">
