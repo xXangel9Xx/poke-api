@@ -20,6 +20,7 @@ const Board = (props) =>{
                 </Link>
              )
             }
+
         </div>
     )
 }

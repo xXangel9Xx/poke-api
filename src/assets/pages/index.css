@@ -9,4 +9,14 @@
         width: 100%;
         position: absolute;
     }
+    .button-fetch{
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        padding-top: 25px;
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,0,0,1) 100%);
+        color: white;
+        margin: auto;
+        margin-bottom: 25px;
+    }
 }

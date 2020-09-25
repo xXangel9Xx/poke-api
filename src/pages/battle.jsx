@@ -4,8 +4,8 @@ import getPokemon from '../codeJavascript/getPokemon'
 import Board from '../components/componentsBattle/board'
 const Battle = (props) =>{
     const [pokemonPlayer, setPokemonPlayer] = useState(props.match.params.id)
-    const [pokemonPlayerRandom,setPokemonPlayerRandom] = useState( Math.floor(Math.random()*900)+1 )
-    const [pokemonMachine, setPokemonMachine] = useState( Math.floor(Math.random()*900)+1 )
+    const [pokemonPlayerRandom,setPokemonPlayerRandom] = useState( Math.floor(Math.random()*800)+1 )
+    const [pokemonMachine, setPokemonMachine] = useState( Math.floor(Math.random()*800)+1 )
     useEffect(()=>{
         if (pokemonPlayer) {
           getPokemon(pokemonPlayer).then(val => setPokemonPlayer(val) )            

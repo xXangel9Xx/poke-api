@@ -20,4 +20,5 @@
     .grass{background: #6BA497;}
     .ground{background: #4F4A46;}
     .fighting{background: black;}
+    .dark{background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,0,0,1) 100%);}
 }
