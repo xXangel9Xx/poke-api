@@ -47,7 +47,7 @@ const Index = () =>{
             <Nav />
              
              {loader == false? <Board pokemons={pokemons}/> : <div ><img src={loading} alt="" className="loading"/></div>}
-             <div className="button-fetch" onClick={fetchPokemon}>pedir mas</div>
+             {whenPokemons < 800? <div className="button-fetch" onClick={fetchPokemon}>pedir mas</div>: null}
         </div>
     )
 }
