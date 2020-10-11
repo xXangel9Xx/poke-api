@@ -15,7 +15,8 @@ once load we are can see this
 ![index pokemon](https://user-images.githubusercontent.com/58712435/95670035-cda17100-0b54-11eb-9e98-86998f302f32.png?raw=true "index pokemon")
 
 ## more pokemons
-they are 800 pokemons, for get more displace to down and click on pedir mas and you await to page loading 
+they are 800 pokemons, for get more displace to down and click on pedir mas and you await to page loading,
+some pokemons it not load image, this is because sometimes the image no loading good, by internet or other problems. 
 
 ![index pokemon id 200](https://user-images.githubusercontent.com/58712435/95670050-0c372b80-0b55-11eb-82b3-4063c11b109e.png?raw=true "index pokemon")
 
