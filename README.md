@@ -1,3 +1,10 @@
+#words the developer  
+
+this project i the perform with idea of improve my abilities in react, this it is a project to myself . This was one adventure whereof i learned many things, i have a year learning to develop, from the more basic how: ¿what is an variable?, ¿what is an cicle? ,¿what is an function? etc.. i feel like i learned many and i would like learn vere much more. about this library, it is was cool. 
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
