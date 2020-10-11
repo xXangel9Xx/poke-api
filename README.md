@@ -14,6 +14,17 @@ the first thing we see is this Loading, in that process  is makes an fetch to â€
 once load we are can see this
 ![index pokemon](https://user-images.githubusercontent.com/58712435/95670035-cda17100-0b54-11eb-9e98-86998f302f32.png?raw=true "index pokemon")
 
+## more pokemons
+they are 800 pokemons, for get more displace to down and click on pedir mas and you await to page loading 
+
+![index pokemon id 200](https://user-images.githubusercontent.com/58712435/95670050-0c372b80-0b55-11eb-82b3-4063c11b109e.png?raw=true "index pokemon")
+
+
+## Show pokemon 
+
+for show the pokemon, click on a card you are wish see. 
+
+![show about pokemon](https://user-images.githubusercontent.com/58712435/95669943-b8781280-0b53-11eb-9145-2b9a56577411.png?raw=true "show pokemon about")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
