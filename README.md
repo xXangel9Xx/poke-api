@@ -21,13 +21,22 @@ some pokemons it not load image, this is because sometimes the image no loading 
 ![index pokemon id 200](https://user-images.githubusercontent.com/58712435/95670050-0c372b80-0b55-11eb-82b3-4063c11b109e.png?raw=true "index pokemon")
 
 
-## Show pokemon 
+## Show about pokemon 
 
 for show the pokemon, click on a card you are wish see. 
 
 ![show about pokemon](https://user-images.githubusercontent.com/58712435/95669943-b8781280-0b53-11eb-9145-2b9a56577411.png?raw=true "show pokemon about")
 
+## Show base state pokemon
+if are you want see the base stats click on Base State, there you will see the 5 basic moves with the you will plays.
+
+![show base state pokemon](https://user-images.githubusercontent.com/58712435/95669969-ea897480-0b53-11eb-90ea-ec889bd87de9.png?raw=true "show pokemon base state")
+
+## Show moves pokemons
+this moves are all the one that have their pokemons in general.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
