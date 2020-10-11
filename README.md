@@ -49,10 +49,9 @@ If are you want battle with this pokemon click on battle; the machine have 70% p
 
 ![battle ](https://user-images.githubusercontent.com/58712435/95670067-528c8a80-0b55-11eb-9063-fdc1e890f5b0.png?raw=true "battle")
 
+![battle 2](https://user-images.githubusercontent.com/58712435/95670110-9aabad00-0b55-11eb-8c01-323b780e42d6.png?raw=true "battle 2")
 
 This project can is see from mobile, tablet and desktop.
-
-
 
 remember to  keep in mind sometimes the images no load, click in the arrow <- , no reload the page or it falls page, this is a error of firevase deployed.
 
