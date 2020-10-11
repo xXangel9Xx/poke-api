@@ -9,6 +9,10 @@ the first thing we see is this Loading, in that process  is makes an fetch to â€
 
 ![loading](https://user-images.githubusercontent.com/58712435/95669821-b6618400-0b52-11eb-8a38-b384d648aa52.png?raw=true "loading")
 
+## Loading ready 
+
+once load we are can see this
+![index pokemon](https://user-images.githubusercontent.com/58712435/95670035-cda17100-0b54-11eb-9e98-86998f302f32.png?raw=true "index pokemon")
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
