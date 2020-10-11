@@ -2,6 +2,8 @@
 
 This project i the perform with idea of improve my abilities in react, this it is a project to myself . This was one adventure whereof i learned many things, i have a year learning to develop, from the more basic how: ¿what is an variable?, ¿what is an cicle? ,¿what is an function? etc.. i feel like i learned many and i would like learn vere much more. about this library, it is was cool. 
 
+This project can is see from mobile, tablet and desktop.
+
 ## Loading
 The first thing we see is this Loading, in that process  is makes an fetch to “https://pokeapi.co/api/v2/pokemon/:id/“ in this case it is  between 1 to 100 pokemons, we await for it to loading.
 
