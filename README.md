@@ -5,6 +5,9 @@ This project i the perform with idea of improve my abilities in react, this it i
 
 This project can is see from mobile, tablet and desktop.
 
+warning:click in the arrow <- , no reload the page or it falls page, this is a error of firevase deployed.
+
+
 ## Loading
 The first thing we see is this Loading, in that process  is makes an fetch to “https://pokeapi.co/api/v2/pokemon/:id/“ in this case it is  between 1 to 100 pokemons, we await for it to loading.
 
