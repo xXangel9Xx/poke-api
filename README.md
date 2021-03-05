@@ -52,11 +52,11 @@ This moves are all the one that
 
 It has an approximate 50% probability of hitting since the machine is designed with one rand and there are 4 options, 2 defense, 2 attack, the machine is driven by this rand.
 
-
-![battle](https://user-images.githubusercontent.com/58712435/110129164-04935000-7d9e-11eb-9474-9d2c43655736.png?raw=true "battle")
-## Responsive Battle
-
 ![Captura de pantalla de 2021-03-04 13-10-51](https://user-images.githubusercontent.com/58712435/110129201-0fe67b80-7d9e-11eb-927b-d5686fc845f7.png?raw=true "Captura de pantalla de 2021-03-04 13-10-51")
+
+
+## Responsive Battle
+![battle](https://user-images.githubusercontent.com/58712435/110129164-04935000-7d9e-11eb-9474-9d2c43655736.png?raw=true "battle")
 
 ## Movile
 ![Captura de pantalla de 2021-03-04 13-11-00](https://user-images.githubusercontent.com/58712435/110129236-1d036a80-7d9e-11eb-91eb-820f65504ef8.png?raw=true "Captura de pantalla de 2021-03-04 13-11-00")
