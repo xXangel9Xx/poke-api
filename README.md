@@ -47,3 +47,19 @@ If are you want see the base stats click on Base State, there you will see the 5
 
 ## Show moves pokemons
 This moves are all the one that 
+
+## Battle 
+
+It has an approximate 50% probability of hitting since the machine is designed with one rand and there are 4 options, 2 defense, 2 attack, the machine is driven by this rand.
+
+![Captura de pantalla de 2021-03-04 13-10-51](https://user-images.githubusercontent.com/58712435/110127366-edebf980-7d9b-11eb-9f5e-d79724a20803.png?raw=true "Captura de pantalla de 2021-03-04 13-10-51")
+
+## Responsive Battle
+
+![Captura de pantalla de 2021-03-04 13-11-04](https://user-images.githubusercontent.com/58712435/110127473-12e06c80-7d9c-11eb-9f29-93aff4061dc4.png?raw=true "Captura de pantalla de 2021-03-04 13-11-04")
+
+## Movile
+
+![Captura de pantalla de 2021-03-04 13-11-00](https://user-images.githubusercontent.com/58712435/110127877-85514c80-7d9c-11eb-90be-b80d44c880f8.png?raw=true "Captura de pantalla de 2021-03-04 13-11-00")
+
+
